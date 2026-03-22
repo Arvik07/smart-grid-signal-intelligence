@@ -1,0 +1,14 @@
+numpy
+pandas
+scipy
+scikit-learn
+tensorflow
+streamlit 
+plotly 
+matplotlib 
+langchain 
+langchain-community 
+langchain-groq
+python-dotenv 
+jupyter 
+ipykernel

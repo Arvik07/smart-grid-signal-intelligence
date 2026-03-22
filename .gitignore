@@ -1,0 +1,45 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Virtual environments ──────────────────────────────────────────────────
+env/
+venv/
+.venv/
+ENV/
+
+# ── Secrets — NEVER commit this ──────────────────────────────────────────
+.env
+.env.local
+.env.production
+*.key
+
+# ── Data files — too large for GitHub ────────────────────────────────────
+data/raw/
+data/processed/
+
+# Models are committed (needed for Streamlit Cloud deployment)
+# data/models/ ← intentionally NOT ignored
+
+# ── IDE and OS ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── Logs and temp files ───────────────────────────────────────────────────
+*.log
+*.tmp
+*.cache
