@@ -1,45 +1,59 @@
-# ── Python ────────────────────────────────────────────────────────────────
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.egg-info/
-dist/
-build/
-.eggs/
 
-# ── Jupyter ───────────────────────────────────────────────────────────────
+# Jupyter
 .ipynb_checkpoints/
-*.ipynb_checkpoints
 
-# ── Virtual environments ──────────────────────────────────────────────────
+# Virtual environments
 env/
 venv/
 .venv/
-ENV/
 
-# ── Secrets — NEVER commit this ──────────────────────────────────────────
+# Secrets — NEVER commit
 .env
-.env.local
-.env.production
-*.key
 
-# ── Data files — too large for GitHub ────────────────────────────────────
+# Large data files
 data/raw/
 data/processed/
 
-# Models are committed (needed for Streamlit Cloud deployment)
-# data/models/ ← intentionally NOT ignored
+# data/models/ is intentionally NOT here — models must be committed
 
-# ── IDE and OS ────────────────────────────────────────────────────────────
+# IDE and OS
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
-*.swp
-*.swo
+```
 
-# ── Logs and temp files ───────────────────────────────────────────────────
-*.log
-*.tmp
-*.cache
+---
+
+**Step 3 — Verify these 3 files exist in your project root**
+
+`requirements.txt` — should contain:
+```
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+scikit-learn==1.5.1
+streamlit==1.38.0
+plotly==5.24.1
+matplotlib==3.9.2
+langchain==0.3.1
+langchain-community==0.3.1
+langchain-core==0.3.6
+langchain-groq==0.2.0
+python-dotenv==1.0.1
+groq==0.11.0
+```
+
+`packages.txt` — should contain:
+```
+libgomp1
+```
+
+`runtime.txt` — should contain:
+```
+python-3.11
