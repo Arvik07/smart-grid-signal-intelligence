@@ -2,6 +2,8 @@
 
 An end-to-end intelligent system that simulates power grid signals, detects anomalies using DSP + ML, predicts future faults with LSTM, and generates explainable AI diagnostics via Groq LLM — all visualised in a Streamlit dashboard.
 
+Live Demo: smart-grid-signal-intelligence-kbg43qeueyjmrlnqkryv4e.streamlit.app/
+
 ## Stack
 - **Signal simulation** — NumPy, SciPy
 - **DSP** — SciPy (FFT, FIR/IIR filters, STFT)
